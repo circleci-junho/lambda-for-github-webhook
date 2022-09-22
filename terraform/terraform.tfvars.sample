@@ -1,0 +1,5 @@
+aws_region            = ""
+aws_access_key        = ""
+aws_secret_key        = ""
+api_gateway_path      = "circleci-test"
+lambda_function_name  = "test_github_webhook"
