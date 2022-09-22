@@ -10,8 +10,8 @@ exports.handler = async (event) => {
   // Create conditional funtion or separate Lamdba servide to handle various trigger option.
   const name = payload.pull_request.head.repo.full_name;
   const branch = payload.pull_request.head.ref;
-  console.log(name); // circleci-tester
-  console.log(branch); // main
+  console.log(name); // i.g. circleci-tester
+  console.log(branch); // i.g. main
 
   // Setup request option, please check CircleCI API documents
   // https://circleci.com/docs/api/v2/index.html

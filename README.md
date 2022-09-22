@@ -19,5 +19,13 @@ make apply
 ```
 
 ## Usage
-After modifying your script, compress and upload your source code.   
-For long-term maintenance, I recommend using CircleCI for deployment.
+After modifying [the script](https://github.com/circleci-junho/lambda-for-github-webhook/blob/main/src/index.js), compress and upload your source code.   
+(For long-term maintenance, I recommend using CircleCI for deployment)
+
+Make sure the webhook sends a payload to lambda endpoint.  
+```
+Setting > webhooks > Add webhook > Payload URL
+
+# you can configure which events would you like to trigger, please check below details
+# https://docs.github.com/en/developers/webhooks-and-events/events/github-event-types
+```
